@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Filter</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>PrimeNumberFilter</display-name>
+    <servlet-name>PrimeNumberFilter</servlet-name>
+    <servlet-class>PrimeNumberFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrimeNumberFilter</servlet-name>
+    <url-pattern>/PrimeNumberFilter</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>PrimeNumberFilter</display-name>
+    <filter-name>PrimeNumberFilter</filter-name>
+    <filter-class>PrimeNumberFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>PrimeNumberFilter</filter-name>
+    <url-pattern>/PrimeNumberFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PrimeCheckServlet</display-name>
+    <servlet-name>PrimeCheckServlet</servlet-name>
+    <servlet-class>PrimeCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrimeCheckServlet</servlet-name>
+    <url-pattern>/PrimeCheckServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+</element>
